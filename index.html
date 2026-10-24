@@ -4,14 +4,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>VICCOM</title>
-  <meta name="description" content="VICCOM är en liten spelstudio i Sverige. Just nu bygger vi vårt första spel.">
-  <meta name="theme-color" content="#FCF8D8" media="(prefers-color-scheme: light)">
-  <meta name="theme-color" content="#22231F" media="(prefers-color-scheme: dark)">
+  <meta name="description" content="VICCOM är en spelstudio i Sverige. Wobble Wheels släpps i november. Wyrmwind, AnyLap och Psst är under utveckling.">
+  <meta name="theme-color" content="#121311">
   <meta property="og:title" content="VICCOM">
-  <meta property="og:description" content="En liten spelstudio i Sverige. Första spelet är på väg.">
+  <meta property="og:description" content="Spel och appar från en enmansstudio i Sverige. Wobble Wheels släpps i november.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://viccom.se/">
-  <meta property="og:image" content="https://viccom.se/og.png">
+  <meta property="og:image" content="https://viccom.se/ww-feature-1024x500.png">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preload" href="unbounded.woff2" as="font" type="font/woff2" crossorigin>
@@ -20,52 +19,162 @@
 <body>
   <a class="skip" href="#innehall">Hoppa till innehållet</a>
 
-  <header class="site-header">
-    <div class="wrap">
-      <a class="brand" href="index.html" aria-label="VICCOM, till startsidan">
-        <picture><source srcset="viccom-mark-frost.svg" media="(prefers-color-scheme: dark)"><img src="favicon.svg" alt="" width="34" height="34"></picture>
-        <span>VICCOM</span>
-      </a>
-      <nav class="site-nav" aria-label="Huvudmeny">
-        <ul>
-          <li><a href="#spel">Spel</a></li>
-          <li><a href="#om">Om</a></li>
-          <li><a href="#kontakt">Kontakt</a></li>
-          <li><a href="press.html">Press</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+  <div class="grid-bg">
+    <header class="site-header">
+      <div class="wrap">
+        <a class="brand" href="index.html" aria-label="VICCOM, till startsidan">
+          <img src="viccom-mark-frost.svg" alt="" width="34" height="34">
+          <span>VICCOM</span>
+        </a>
+        <nav class="site-nav" aria-label="Huvudmeny">
+          <ul>
+            <li><a href="#spel">Spel</a></li>
+            <li><a href="#appar">Appar</a></li>
+            <li><a href="#om">Om</a></li>
+            <li><a href="#kontakt">Kontakt</a></li>
+            <li><a href="press.html">Press</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-  <main id="innehall">
-    <section class="hero">
+    <section class="hero" id="innehall">
       <div class="wrap">
         <h1>VICCOM</h1>
-        <p class="lede">En liten spelstudio i Sverige. Just nu bygger vi vårt första spel.</p>
+        <p class="lede">Spel och appar från en enmansstudio i Sverige. Första spelet släpps i november.</p>
 
-        <div class="window" data-frost>
-          <div class="reveal">
-            <strong>Första spelet är på väg.</strong>
-            <span>Följ <a href="https://www.instagram.com/viccom_games/">@viccom_games</a> för att se det först.</span>
+        <div class="board" aria-labelledby="board-title">
+          <div class="board-head">
+            <strong id="board-title">Vad vi bygger just nu</strong>
+            <span>Uppdaterad oktober 2026</span>
           </div>
-          <canvas aria-hidden="true"></canvas>
+          <table>
+            <thead>
+              <tr><th scope="col">Projekt</th><th scope="col">Typ</th><th scope="col">Status</th><th scope="col">Framsteg</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><a href="wobble-wheels.html">Wobble Wheels</a></td>
+                <td class="type">Mobilspel</td>
+                <td><span class="status"><i class="dot live" aria-hidden="true"></i>Släpps i november</span></td>
+                <td class="meter-cell"><div class="meter" role="img" aria-label="Nästan klart"><i style="width:92%"></i></div></td>
+              </tr>
+              <tr>
+                <td><a href="wyrmwind.html">Wyrmwind</a></td>
+                <td class="type">Spel</td>
+                <td><span class="status"><i class="dot" aria-hidden="true"></i>Under utveckling</span></td>
+                <td class="meter-cell"><div class="meter" role="img" aria-label="Tidigt skede"><i style="width:18%"></i></div></td>
+              </tr>
+              <tr>
+                <td><a href="#appar">AnyLap</a></td>
+                <td class="type">App</td>
+                <td><span class="status"><i class="dot" aria-hidden="true"></i>Under utveckling</span></td>
+                <td class="meter-cell"><div class="meter" role="img" aria-label="Pågår"><i style="width:45%"></i></div></td>
+              </tr>
+              <tr>
+                <td><a href="#appar">Psst</a></td>
+                <td class="type">App</td>
+                <td><span class="status"><i class="dot" aria-hidden="true"></i>Under utveckling</span></td>
+                <td class="meter-cell"><div class="meter" role="img" aria-label="Pågår"><i style="width:35%"></i></div></td>
+              </tr>
+            </tbody>
+          </table>
         </div>
-        <p class="window-hint">Dra över rutan för att torka bort frosten. <button class="linklike" type="button" data-frost-clear>Torka hela rutan</button></p>
+      </div>
+    </section>
+  </div>
+
+  <main>
+    <section class="section" id="spel" aria-labelledby="spel-rubrik">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 id="spel-rubrik">Spel</h2>
+          <p>Två spel på gång. Ett nästan klart, ett i verkstaden.</p>
+        </div>
+
+        <article class="feature" aria-labelledby="ww-rubrik">
+          <div class="feature-art" data-frost>
+            <span class="tag"><i class="dot live" aria-hidden="true"></i>Släpps i november</span>
+            <img src="ww-feature.webp" alt="Wobble Wheels: fem ritade bilar med handritade hjul racar längs en väg i solnedgång." width="1024" height="500" loading="eager">
+            <canvas aria-hidden="true"></canvas>
+          </div>
+          <p class="window-hint">Dra över bilden för att torka bort frosten. <button class="linklike" type="button" data-frost-clear>Torka hela rutan</button></p>
+
+          <div class="feature-body">
+            <div>
+              <h3 id="ww-rubrik">Wobble Wheels</h3>
+              <p class="tagline">Rita dina hjul. Slå dina vänner.</p>
+              <p>Ett racingspel där du ritar dina egna hjul, och ritar om dem mitt i loppet när vägen byter skepnad. Spikar biter på is, paddlar tar dig genom översvämningar, små hjul klarar låga tunnlar. Tävla live mot vänner, jaga världsrekordflaggor och klättra i rankade säsonger.</p>
+              <div class="actions">
+                <a class="btn" href="wobble-wheels.html">Mer om spelet</a>
+                <a class="btn ghost" href="https://www.instagram.com/viccom_games/">Följ släppet</a>
+              </div>
+            </div>
+            <ul class="specs">
+              <li><span>Plattform</span><b>Android via Google Play. iOS senare.</b></li>
+              <li><span>Släpp</span><b>November 2026</b></li>
+              <li><span>Spelare</span><b>Upp till 5 online, plus veckovis söndagscup</b></li>
+              <li><span>Pris</span><b>Gratis att spela. Inget pay to win.</b></li>
+            </ul>
+          </div>
+
+          <ul class="shots" aria-label="Skärmbilder från Wobble Wheels">
+            <li><img src="ww-shot-2.webp" alt="Rita dina hjul: spikhjul på glansig is." width="720" height="1280" loading="lazy"></li>
+            <li><img src="ww-shot-3.webp" alt="Rita om för varje väg: små hjul, paddlar, spikar, kuggar och stora runda hjul." width="720" height="1280" loading="lazy"></li>
+            <li><img src="ww-shot-5.webp" alt="Slå dina vänner: live online-lopp i solnedgång." width="720" height="1280" loading="lazy"></li>
+            <li><img src="ww-shot-6.webp" alt="Klättra till Grandmaster: rankade ligor från Bronze till Grandmaster." width="720" height="1280" loading="lazy"></li>
+            <li><img src="ww-shot-7.webp" alt="Inget pay to win: 18 bilkarosser som alla kör likadant." width="720" height="1280" loading="lazy"></li>
+          </ul>
+        </article>
+
+        <article class="feature" aria-labelledby="wyrm-rubrik">
+          <div class="feature-art">
+            <span class="tag"><i class="dot" aria-hidden="true"></i>Under utveckling</span>
+            <img src="wyrmwind-feature.webp" alt="Wyrmwind: en röd drake sprutar eld mot en lysande portal ovanför ett slott i storm." width="1024" height="500" loading="lazy">
+          </div>
+          <div class="feature-body">
+            <div>
+              <h3 id="wyrm-rubrik">Wyrmwind</h3>
+              <p class="tagline">Drakar, portaler och en storm som inte lägger sig.</p>
+              <p>Vårt nästa spel. Vi berättar mer när det finns något att visa, och det kommer när det är klart.</p>
+              <div class="actions">
+                <a class="btn ghost" href="wyrmwind.html">Mer om Wyrmwind</a>
+              </div>
+            </div>
+            <ul class="specs">
+              <li><span>Plattform</span><b>Meddelas senare</b></li>
+              <li><span>Släpp</span><b>När det är klart</b></li>
+            </ul>
+          </div>
+        </article>
       </div>
     </section>
 
-    <section class="section" id="spel" aria-labelledby="spel-rubrik">
+    <section class="section" id="appar" aria-labelledby="appar-rubrik">
       <div class="wrap">
-        <h2 id="spel-rubrik">Spel</h2>
-        <div class="games">
-          <article class="game">
-            <span class="status">Under utveckling</span>
-            <h3>Projekt 01</h3>
-            <p>Vårt första spel. Namn, plattformar och släppdatum hamnar här när vi är redo att visa det.</p>
+        <div class="section-head">
+          <h2 id="appar-rubrik">Appar</h2>
+          <p>Verktyg vi bygger för att vi själva behöver dem.</p>
+        </div>
+        <div class="cards">
+          <article class="card">
+            <div class="icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="13" r="8"/><path d="M12 13V8M9 2h6"/></svg>
+            </div>
+            <span class="status"><i class="dot" aria-hidden="true"></i>Under utveckling</span>
+            <h3>AnyLap</h3>
+            <p class="kind">Race tracker</p>
+            <p>Logga varv, tider och lopp, oavsett vad du kör. Mer information kommer när appen är klar.</p>
           </article>
-          <div class="game slot">
-            <p>Nästa spel får plats här.</p>
-          </div>
+          <article class="card">
+            <div class="icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M7 10h6M7 14h10"/></svg>
+            </div>
+            <span class="status"><i class="dot" aria-hidden="true"></i>Under utveckling</span>
+            <h3>Psst</h3>
+            <p class="kind">Work widget</p>
+            <p>En liten widget för arbetsdagen. Mer information kommer när appen är klar.</p>
+          </article>
         </div>
       </div>
     </section>
@@ -74,7 +183,7 @@
       <div class="wrap split">
         <h2 id="om-rubrik">Om VICCOM</h2>
         <div class="prose">
-          <p>VICCOM startade 2026 som en enmansstudio. Vi gör spel för mobil och dator, med fokus på tydlig design och sådant som är roligt att komma tillbaka till.</p>
+          <p>VICCOM startade 2026 som en enmansstudio i Sverige. Vi gör spel för mobil och dator, och appar för sådant vi själva saknar. Fokus ligger på tydlig design och saker som är roliga att komma tillbaka till.</p>
           <p>Vi visar gärna arbetet på vägen, med skisser, prototyper och misslyckade idéer. Det mesta hamnar först på Instagram och TikTok.</p>
         </div>
       </div>
@@ -85,7 +194,7 @@
         <h2 id="kontakt-rubrik">Kontakt</h2>
         <ul class="contact">
           <li><a href="mailto:info@viccom.se">info@viccom.se</a><span>Allmänna frågor, samarbeten och press</span></li>
-          <li><a href="mailto:support@viccom.se">support@viccom.se</a><span>Hjälp med något av våra spel</span></li>
+          <li><a href="mailto:support@viccom.se">support@viccom.se</a><span>Hjälp med något av våra spel eller appar</span></li>
           <li><a href="mailto:order@viccom.se">order@viccom.se</a><span>Beställningar, kvitton och fakturor</span></li>
           <li><a href="mailto:vic@viccom.se">vic@viccom.se</a><span>Direkt till grundaren</span></li>
         </ul>
@@ -112,10 +221,11 @@
       <div>
         <h2>Mer</h2>
         <ul>
+          <li><a href="wobble-wheels.html">Wobble Wheels</a></li>
+          <li><a href="wyrmwind.html">Wyrmwind</a></li>
           <li><a href="press.html">Presskit</a></li>
           <li><a href="integritetspolicy.html">Integritetspolicy</a></li>
           <li><a href="radera-konto.html">Radera konto</a></li>
-          <li><a href="mailto:info@viccom.se">info@viccom.se</a></li>
         </ul>
       </div>
     </div>

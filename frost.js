@@ -75,7 +75,7 @@
   }
 
   function stroke(x, y) {
-    const r = Math.max(36, Math.min(w, h) * 0.09);
+    const r = Math.max(40, Math.min(w, h) * 0.16);
     if (last) {
       const dx = x - last.x, dy = y - last.y, dist = Math.hypot(dx, dy);
       const steps = Math.ceil(dist / (r * 0.25));
@@ -91,9 +91,9 @@
     if (raf) return;
     const tick = (t) => {
       if (t - lastTouch > 15000) { raf = 0; return; }
-      if (t - lastTouch > 1200) {
+      if (t - lastTouch > 4000) {
         ctx.globalCompositeOperation = "source-over";
-        ctx.globalAlpha = 0.012;
+        ctx.globalAlpha = 0.006;
         ctx.drawImage(texture, 0, 0);
       }
       raf = requestAnimationFrame(tick);
@@ -120,14 +120,17 @@
     if (!reduce) loop();
   });
 
-  let rt;
-  addEventListener("resize", () => { clearTimeout(rt); rt = setTimeout(resize, 150); });
+  let rt, lastW = innerWidth;
+  addEventListener("resize", () => {
+    if (innerWidth === lastW) return; // mobilens adressfält ska inte nollställa frosten
+    lastW = innerWidth; clearTimeout(rt); rt = setTimeout(resize, 150);
+  });
   resize();
 
   // Ett enda inledande torkdrag som visar att rutan går att torka
   if (!reduce) {
     let start = 0; const dur = 900;
-    const path = (k) => ({ x: w * (0.06 + 0.5 * k), y: h * (0.78 - 0.22 * Math.sin(k * Math.PI)) });
+    const path = (k) => ({ x: w * (0.08 + 0.62 * k), y: h * (0.62 - 0.3 * Math.sin(k * Math.PI)) });
     const intro = (t) => {
       const k = Math.min(1, (t - start) / dur);
       const p = path(k); stroke(p.x, p.y);
