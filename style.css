@@ -304,3 +304,53 @@ blockquote.boiler p { margin: 0 0 0.6em; }
   .dot.live { animation: none; }
   * { transition: none !important; }
 }
+
+/* ---- v3: flerspråk, alla produkter ---- */
+.site-nav .lang a {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 4px 10px; border: 1px solid var(--line-strong); border-radius: 999px;
+  font-size: var(--step--1); font-weight: 600; letter-spacing: 0.04em; color: var(--frost);
+}
+.site-nav .lang a:hover { border-color: var(--ember); color: var(--ember-hi); }
+.site-nav .lang svg { width: 15px; height: 15px; }
+@media (max-width: 600px) { .site-nav ul { flex-wrap: wrap; row-gap: 8px; } }
+
+.meter i { background: var(--p, var(--ember)); }
+
+/* Produkter utan nyckelbild: ikon på rutnät med produktens accent */
+.icon-art {
+  display: grid; place-items: center;
+  background:
+    radial-gradient(55% 80% at 50% 55%, color-mix(in srgb, var(--p) 28%, transparent), transparent 70%),
+    linear-gradient(var(--line) 1px, transparent 1px) 0 0 / 40px 40px,
+    linear-gradient(90deg, var(--line) 1px, transparent 1px) 0 0 / 40px 40px,
+    var(--bg-2);
+}
+.icon-art-inner { display: flex; align-items: center; gap: clamp(16px, 3vw, 32px); }
+.icon-art-inner span {
+  font-family: var(--display); font-weight: 800; letter-spacing: -0.03em;
+  font-size: clamp(2rem, 1rem + 6vw, 5.5rem); color: var(--frost);
+}
+.icon-big {
+  width: clamp(96px, 16vw, 180px); aspect-ratio: 1; border-radius: 28%;
+  display: grid; place-items: center; color: var(--p);
+  background: var(--bg-3); border: 1px solid color-mix(in srgb, var(--p) 45%, transparent);
+  box-shadow: 0 0 60px color-mix(in srgb, var(--p) 35%, transparent);
+}
+.icon-big svg { width: 52%; height: 52%; }
+@media (max-width: 520px) { .icon-art { aspect-ratio: 4 / 3; } .icon-art-inner { flex-direction: column; gap: 10px; } }
+
+/* Appkort som länkar */
+a.card { text-decoration: none; color: inherit; transition: border-color 0.15s, transform 0.15s; }
+a.card:hover { border-color: color-mix(in srgb, var(--p, var(--ember)) 60%, transparent); color: inherit; }
+a.card:hover .more { color: var(--ember-hi); }
+.card::after { background: radial-gradient(circle, color-mix(in srgb, var(--p, var(--ember)) 26%, transparent), transparent 70%); }
+.card .icon { color: var(--p, var(--frost)); }
+.card .kind { color: var(--text); font-weight: 600; }
+.card .more { margin-top: auto; padding-top: 8px; font-weight: 700; text-decoration: underline; text-decoration-color: var(--ember); text-decoration-thickness: 2px; text-underline-offset: 0.2em; }
+
+.features li { border-top: 2px solid color-mix(in srgb, var(--p, var(--ember)) 70%, transparent); }
+.site-footer .wrap { grid-template-columns: 1.6fr 1fr 1fr 1fr; }
+@media (max-width: 860px) { .site-footer .wrap { grid-template-columns: 1fr 1fr; } }
+.site-footer small a { color: var(--text-2); text-decoration: underline; text-decoration-color: var(--ember); }
+.lost .actions { display: flex; gap: 12px; flex-wrap: wrap; }
