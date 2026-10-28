@@ -138,10 +138,10 @@ PRODUCTS = [
         "short":   {"en": "Point your phone at the finish line and AnyLap counts laps and times them as the cars cross it. No transponders, no extra hardware.",
                     "sv": "Rikta mobilen mot mållinjen så räknar AnyLap varv och tar tid när bilarna passerar. Inga transpondrar, ingen extra utrustning."},
         "body": {
-            "en": ["AnyLap turns your phone into a lap timer for RC cars. Set it up by the track, point the camera at the finish line, and it detects every car that crosses and times the lap.",
-                   "No transponders and no timing loop. Your sessions and lap times are saved, so you can compare runs and see if that setup change actually helped."],
-            "sv": ["AnyLap gör mobilen till ett varvtidtagarur för radiostyrda bilar. Ställ den vid banan, rikta kameran mot mållinjen, så upptäcker den varje bil som passerar och tar tid på varvet.",
-                   "Inga transpondrar och ingen tidtagningsslinga. Dina pass och varvtider sparas, så att du kan jämföra körningar och se om ändringen i inställningarna faktiskt hjälpte."],
+            "en": ["AnyLap turns your phone into a lap timer for RC cars. Set it up by the track, point the camera at the finish line, and it recognises each car as it crosses and times the lap.",
+                   "No transponders and no timing loop. Lap times, stats and replays are saved on your phone, so you can compare runs and see if that setup change actually helped. No account, no ads, and nothing leaves the phone unless you share it."],
+            "sv": ["AnyLap gör mobilen till ett varvtidtagarur för radiostyrda bilar. Ställ den vid banan, rikta kameran mot mållinjen, så känner den igen varje bil som passerar och tar tid på varvet.",
+                   "Inga transpondrar och ingen tidtagningsslinga. Varvtider, statistik och repriser sparas i mobilen, så att du kan jämföra körningar och se om ändringen i inställningarna faktiskt hjälpte. Inget konto, ingen reklam, och inget lämnar mobilen om du inte delar det själv."],
         },
         "specs": [
             ({"en": "Platform", "sv": "Plattform"}, {"en": "Android first, iOS later", "sv": "Android först, iOS senare"}),
@@ -149,9 +149,9 @@ PRODUCTS = [
             ({"en": "Price", "sv": "Pris"}, {"en": "To be announced", "sv": "Meddelas senare"}),
         ],
         "features": [
-            ({"en": "Camera finish line", "sv": "Mållinje med kameran"}, {"en": "The phone watches the line and registers each car that crosses it.", "sv": "Mobilen bevakar linjen och registrerar varje bil som passerar."}),
+            ({"en": "Camera finish line", "sv": "Mållinje med kameran"}, {"en": "Photograph each car once. The phone watches the line and knows who crossed it.", "sv": "Fotografera varje bil en gång. Mobilen bevakar linjen och vet vem som passerade."}),
             ({"en": "Lap times as you drive", "sv": "Varvtider medan du kör"}, {"en": "See each lap and your best lap while the session runs.", "sv": "Se varje varv och ditt bästa varv medan passet pågår."}),
-            ({"en": "Saved sessions", "sv": "Sparade pass"}, {"en": "Compare runs over time and see what made you faster.", "sv": "Jämför körningar över tid och se vad som gjorde dig snabbare."}),
+            ({"en": "Stats and replays", "sv": "Statistik och repriser"}, {"en": "Compare runs over time and replay each finish-line crossing. Everything stays on your phone.", "sv": "Jämför körningar över tid och se repris på varje passering. Allt stannar i mobilen."}),
         ],
         "shots": [],
         "cta": [
@@ -613,12 +613,18 @@ def page_privacy(lang):
           <p>Wyrmwind is a prototype and doesn't collect any personal data. We'll update this section before it does.</p>
 
           <h3>AnyLap</h3>
-          <p>AnyLap uses your phone's camera to detect cars crossing the finish line. The camera image is analysed on your device and isn't uploaded or stored by us. If you sign in, we store your account, sessions and lap times so you can compare them later.</p>
-          <p>Data is stored with Supabase in Stockholm (EU). AnyLap and Psst share one VICCOM account. Legal basis: contract.</p>
+          <p>AnyLap is a lap timer that uses your phone's camera. It needs the camera permission to see racers cross the finish line. The video is processed on your phone and is never sent to us or anyone else.</p>
+          <ul>
+            <li><strong>No account and no sign-in.</strong> AnyLap has no internet connection and sends no data to any server.</li>
+            <li><strong>What it saves stays on your phone:</strong> racer names, car photos and colour calibration, lap times, stats and replays of finish-line crossings. Delete them by removing racers and sessions in the app, or by uninstalling it.</li>
+            <li><strong>Sharing only when you choose.</strong> If you share results or a video, it goes through your phone's normal share menu to the app you pick.</li>
+            <li><strong>No ads, no analytics and no tracking.</strong></li>
+          </ul>
+          <p>If AnyLap later gets accounts or cloud sync, we update this section before that version is released.</p>
 
           <h3>Psst</h3>
           <p>Psst needs an account to know which groups you belong to. We store your account, your display name, the groups you're in and the alerts sent in them. To deliver alerts we store a push token for your device, and the alert is delivered through Expo and Google Firebase Cloud Messaging (and Apple Push Notification service on iPhone).</p>
-          <p>Data is stored with Supabase in Stockholm (EU). Psst and AnyLap share one VICCOM account. Legal basis: contract.</p>
+          <p>Data is stored with Supabase in Stockholm (EU). Legal basis: contract.</p>
 
           <h2 id="signin">Accounts and sign-in</h2>
           <p>Some products let you sign in with Google or Apple. We then receive a user ID and, if you allow it, your email address and name. If you hide your email when signing in with Apple, we only get Apple's forwarding address. We never receive your password.</p>
@@ -682,12 +688,18 @@ def page_privacy(lang):
           <p>Wyrmwind är en prototyp och samlar inte in några personuppgifter. Vi uppdaterar det här avsnittet innan det ändras.</p>
 
           <h3>AnyLap</h3>
-          <p>AnyLap använder mobilens kamera för att upptäcka bilar som passerar mållinjen. Kamerabilden analyseras på din enhet och laddas inte upp eller sparas av oss. Om du loggar in sparar vi ditt konto, dina pass och varvtider så att du kan jämföra dem senare.</p>
-          <p>Uppgifterna lagras hos Supabase i Stockholm (EU). AnyLap och Psst delar ett gemensamt VICCOM-konto. Rättslig grund är avtal.</p>
+          <p>AnyLap är en varvräknare som använder mobilens kamera. Appen behöver kamerabehörighet för att se när förare passerar mållinjen. Kamerabilden behandlas direkt i mobilen och skickas aldrig till oss eller någon annan.</p>
+          <ul>
+            <li><strong>Inget konto och ingen inloggning.</strong> AnyLap har ingen internetanslutning och skickar inga uppgifter till någon server.</li>
+            <li><strong>Det som sparas, sparas i mobilen:</strong> förarnamn, foton och färgkalibrering av bilar, varvtider, statistik och repriser av passeringar. Du raderar det genom att ta bort förare och pass i appen eller genom att avinstallera den.</li>
+            <li><strong>Delning sker bara när du väljer det.</strong> Delar du resultat eller en video går den via mobilens vanliga delningsmeny till den app du väljer.</li>
+            <li><strong>Ingen reklam, ingen analys och ingen spårning.</strong></li>
+          </ul>
+          <p>Om AnyLap senare får konton eller synkning i molnet uppdaterar vi det här avsnittet innan den versionen släpps.</p>
 
           <h3>Psst</h3>
           <p>Psst behöver ett konto för att veta vilka grupper du tillhör. Vi sparar ditt konto, ditt visningsnamn, grupperna du är med i och signalerna som skickas i dem. För att kunna leverera signaler sparar vi en push-token för din enhet, och signalen levereras via Expo och Google Firebase Cloud Messaging (och Apple Push Notification service på iPhone).</p>
-          <p>Uppgifterna lagras hos Supabase i Stockholm (EU). Psst och AnyLap delar ett gemensamt VICCOM-konto. Rättslig grund är avtal.</p>
+          <p>Uppgifterna lagras hos Supabase i Stockholm (EU). Rättslig grund är avtal.</p>
 
           <h2 id="signin">Konto och inloggning</h2>
           <p>Vissa produkter låter dig logga in med Google eller Apple. Då får vi ett användar-id och, om du godkänner det, din e-postadress och ditt namn. Väljer du att dölja din e-post vid inloggning med Apple får vi bara Apples vidarebefordringsadress. Vi får aldrig ditt lösenord.</p>
@@ -734,7 +746,7 @@ def page_delete(lang):
            ("partial", L(lang, "Delete only some data", "Radera bara viss data"))]
     mail = "mailto:support@viccom.se?subject=" + ("Delete%20account" if E else "Radera%20konto")
     if E:
-        body = f"""          <div class="note"><p>Developer: VICCOM. Applies to Wobble Wheels, AnyLap and Psst. AnyLap and Psst share one VICCOM account, so deleting it in one removes it from both. Uninstalling an app does not delete your account.</p></div>
+        body = f"""          <div class="note"><p>Developer: VICCOM. Applies to Wobble Wheels and Psst. Uninstalling an app does not delete your account. AnyLap has no account: everything it saves is on your phone, and you delete it by removing racers and sessions in the app or by uninstalling it.</p></div>
 
           <h2 id="in-app">Delete in the app</h2>
           <ol>
@@ -760,7 +772,7 @@ def page_delete(lang):
             <li>Email address and display name</li>
             <li>Progress, garage, settings and saves in the cloud</li>
             <li>Race results, records and leaderboard placings</li>
-            <li>Sessions and lap times (AnyLap), groups, alerts and push tokens (Psst)</li>
+            <li>Groups, alerts and push tokens (Psst)</li>
           </ul>
 
           <h2 id="kept">What we keep</h2>
@@ -774,9 +786,9 @@ def page_delete(lang):
           <p>Want to keep the account but remove, say, your name from a leaderboard? Email <a href="mailto:support@viccom.se">support@viccom.se</a> and tell us what you want removed.</p>
           <p>More on how we handle personal data is in our <a href="{url('privacy', lang)}">privacy policy</a>.</p>"""
         title, lede = "Delete account", "How to delete your account in a VICCOM game or app, and what happens to your data."
-        desc = "How to delete your VICCOM account in Wobble Wheels, AnyLap or Psst, and what happens to your data."
+        desc = "How to delete your VICCOM account in Wobble Wheels or Psst, and what happens to your data."
     else:
-        body = f"""          <div class="note"><p>Utvecklare: VICCOM. Gäller Wobble Wheels, AnyLap och Psst. AnyLap och Psst delar ett gemensamt VICCOM-konto, så raderar du det i den ena försvinner det från båda. Att avinstallera en app raderar inte kontot.</p></div>
+        body = f"""          <div class="note"><p>Utvecklare: VICCOM. Gäller Wobble Wheels och Psst. Att avinstallera en app raderar inte kontot. AnyLap har inget konto: allt appen sparar ligger i mobilen, och du raderar det genom att ta bort förare och pass i appen eller genom att avinstallera den.</p></div>
 
           <h2 id="in-app">Radera i appen</h2>
           <ol>
@@ -802,7 +814,7 @@ def page_delete(lang):
             <li>E-postadress och visningsnamn</li>
             <li>Framsteg, garage, inställningar och sparat i molnet</li>
             <li>Lopp, rekord och placeringar på topplistor</li>
-            <li>Pass och varvtider (AnyLap), grupper, signaler och push-tokens (Psst)</li>
+            <li>Grupper, signaler och push-tokens (Psst)</li>
           </ul>
 
           <h2 id="kept">Vad som sparas</h2>
@@ -816,7 +828,7 @@ def page_delete(lang):
           <p>Vill du behålla kontot men ta bort till exempel ditt namn från en topplista? Mejla <a href="mailto:support@viccom.se">support@viccom.se</a> och skriv vad du vill ha bort.</p>
           <p>Mer om hur vi hanterar personuppgifter finns i vår <a href="{url('privacy', lang)}">integritetspolicy</a>.</p>"""
         title, lede = "Radera konto", "Så raderar du ditt konto i ett spel eller en app från VICCOM, och vad som händer med dina uppgifter."
-        desc = "Så raderar du ditt VICCOM-konto i Wobble Wheels, AnyLap eller Psst, och vad som händer med dina uppgifter."
+        desc = "Så raderar du ditt VICCOM-konto i Wobble Wheels eller Psst, och vad som händer med dina uppgifter."
     return doc_page(lang, "delete", title, desc, lede, toc, body)
 
 def page_press(lang):
