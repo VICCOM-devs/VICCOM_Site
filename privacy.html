@@ -51,7 +51,7 @@
     <div class="wrap">
       <header class="page-head">
         <h1>Privacy policy</h1>
-        <p>Last updated 28 October 2026. What personal data we handle in our website, games and apps, why, and what rights you have.</p>
+        <p>Last updated 29 October 2026. What personal data we handle in our website, games and apps, why, and what rights you have.</p>
       </header>
 
       <div class="doc">
@@ -88,7 +88,7 @@
 
           <h2 id="products">Our games and apps</h2>
           <p>Store purchases and downloads through Google Play, the App Store, Steam or itch.io are handled by the store, which is responsible for its own data, such as payment details. We don't receive your payment details.</p>
-          <p>None of our products show ads or use third-party analytics today. If that changes, we update this policy first.</p>
+          <p>None of our products use third-party analytics. Psst shows optional rewarded ads (see below); the others show no ads.</p>
 
           <h3>Wobble Wheels</h3>
           <p>When you start the game, you get a guest account automatically, so your progress and online races work without signing up. We store a player ID, the display name you choose, your progress, garage and settings, and your race results, records and leaderboard placings. Your display name and results are visible to other players on leaderboards and in live races. You can link the guest account to Google to keep it across devices.</p>
@@ -108,8 +108,16 @@
           <p>If AnyLap later gets accounts or cloud sync, we update this section before that version is released.</p>
 
           <h3>Psst</h3>
-          <p>Psst needs an account to know which groups you belong to. We store your account, your display name, the groups you're in and the alerts sent in them. To deliver alerts we store a push token for your device, and the alert is delivered through Expo and Google Firebase Cloud Messaging (and Apple Push Notification service on iPhone).</p>
-          <p>Data is stored with Supabase in Stockholm (EU). Legal basis: contract.</p>
+          <p>Psst creates an anonymous account on your phone the first time you open it, so no sign-up, email or password is needed. The account is what connects you to your groups.</p>
+          <ul>
+            <li><strong>What we store:</strong> an anonymous user ID, the display name you choose, the groups you're in, the buttons in those groups (emoji, text and settings written by group members), the alerts sent in them and who has seen them, and a push token for your device. Alerts are deleted after 7 days.</li>
+            <li><strong>Who sees it:</strong> your display name, the buttons and the alerts are visible to the other members of your group, and only to them. Invite codes expire after 10 minutes, and the group owner can remove members.</li>
+            <li><strong>Voice clips:</strong> if a group uses the robot voice, the clip is generated on your phone. Psst+ AI voices and recorded clips are stored with Supabase and downloaded to every phone in the group. AI voices are generated from the button text with Google Cloud Text-to-Speech.</li>
+            <li><strong>Delivery:</strong> alerts travel through Expo's push service and Google Firebase Cloud Messaging (Apple Push Notification service on iPhone).</li>
+            <li><strong>Rewarded ads:</strong> free users can watch an optional video ad in exchange for extra button edits. Ads are served by Google AdMob, which receives your advertising ID, approximate location and device information. You choose when to watch one; ads never appear when sending or receiving alerts. On iPhone, Psst asks for permission before personalised ads.</li>
+            <li><strong>Psst+ purchases:</strong> subscriptions and the lifetime purchase go through Google Play or the App Store and are managed by RevenueCat, which stores a purchase record linked to your anonymous ID so we can unlock Psst+. We never see your payment details.</li>
+          </ul>
+          <p>Data is stored with Supabase in Stockholm (EU). Legal basis: contract for groups and alerts, consent for rewarded ads. Uninstalling Psst doesn't delete the account; see <a href="/delete-account.html">Delete account</a>.</p>
 
           <h2 id="signin">Accounts and sign-in</h2>
           <p>Some products let you sign in with Google or Apple. We then receive a user ID and, if you allow it, your email address and name. If you hide your email when signing in with Apple, we only get Apple's forwarding address. We never receive your password.</p>
@@ -125,6 +133,7 @@
             <li><strong>Google Workspace</strong> for email.</li>
             <li><strong>GitHub Pages</strong> for hosting this website.</li>
             <li><strong>Expo</strong> and <strong>Google Firebase</strong> for push notifications in Psst.</li>
+            <li><strong>Google AdMob</strong> for rewarded ads in Psst, <strong>RevenueCat</strong> for Psst+ purchases, and <strong>Google Cloud Text-to-Speech</strong> for Psst+ AI voices.</li>
             <li><strong>Google</strong> and <strong>Apple</strong> for sign-in, if you choose to use them.</li>
           </ul>
           <p>Some are US companies. Transfers outside the EU/EEA rely on the EU–US Data Privacy Framework or the European Commission's standard contractual clauses.</p>

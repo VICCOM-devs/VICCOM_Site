@@ -51,7 +51,7 @@
     <div class="wrap">
       <header class="page-head">
         <h1>Integritetspolicy</h1>
-        <p>Senast uppdaterad 28 oktober 2026. Vilka personuppgifter vi hanterar på webbplatsen och i våra spel och appar, varför, och vilka rättigheter du har.</p>
+        <p>Senast uppdaterad 29 oktober 2026. Vilka personuppgifter vi hanterar på webbplatsen och i våra spel och appar, varför, och vilka rättigheter du har.</p>
       </header>
 
       <div class="doc">
@@ -88,7 +88,7 @@
 
           <h2 id="products">Våra spel och appar</h2>
           <p>Köp och nedladdningar via Google Play, App Store, Steam eller itch.io hanteras av butiken, som ansvarar för sina egna uppgifter, till exempel betalning. Vi får aldrig dina betaluppgifter.</p>
-          <p>Ingen av våra produkter visar reklam eller använder analys från tredje part i dag. Om det ändras uppdaterar vi policyn innan.</p>
+          <p>Ingen av våra produkter använder analys från tredje part. Psst visar frivilliga belöningsannonser (se nedan); de andra visar ingen reklam.</p>
 
           <h3>Wobble Wheels</h3>
           <p>När du startar spelet får du automatiskt ett gästkonto, så att framsteg och online-lopp fungerar utan registrering. Vi sparar ett spelar-id, det visningsnamn du väljer, dina framsteg, ditt garage och dina inställningar samt dina lopp, rekord och placeringar på topplistor. Visningsnamn och resultat syns för andra spelare på topplistor och i live-lopp. Du kan koppla gästkontot till Google för att behålla det mellan enheter.</p>
@@ -108,8 +108,16 @@
           <p>Om AnyLap senare får konton eller synkning i molnet uppdaterar vi det här avsnittet innan den versionen släpps.</p>
 
           <h3>Psst</h3>
-          <p>Psst behöver ett konto för att veta vilka grupper du tillhör. Vi sparar ditt konto, ditt visningsnamn, grupperna du är med i och signalerna som skickas i dem. För att kunna leverera signaler sparar vi en push-token för din enhet, och signalen levereras via Expo och Google Firebase Cloud Messaging (och Apple Push Notification service på iPhone).</p>
-          <p>Uppgifterna lagras hos Supabase i Stockholm (EU). Rättslig grund är avtal.</p>
+          <p>Psst skapar ett anonymt konto i din mobil första gången du öppnar appen, så ingen registrering, e-post eller lösenord behövs. Kontot är det som kopplar dig till dina grupper.</p>
+          <ul>
+            <li><strong>Vad vi sparar:</strong> ett anonymt användar-id, det visningsnamn du väljer, grupperna du är med i, knapparna i grupperna (emoji, text och inställningar som medlemmarna skrivit), signalerna som skickats i dem och vem som sett dem, samt en push-token för din enhet. Signaler raderas efter 7 dagar.</li>
+            <li><strong>Vem som ser det:</strong> ditt visningsnamn, knapparna och signalerna syns för de andra medlemmarna i din grupp, och bara för dem. Inbjudningskoder slutar gälla efter 10 minuter, och gruppens ägare kan ta bort medlemmar.</li>
+            <li><strong>Röstklipp:</strong> om en grupp använder robotrösten skapas klippet i din mobil. AI-röster och inspelade klipp i Psst+ lagras hos Supabase och laddas ner till alla mobiler i gruppen. AI-rösterna skapas från knappens text med Google Cloud Text-to-Speech.</li>
+            <li><strong>Leverans:</strong> signalerna skickas via Expos pushtjänst och Google Firebase Cloud Messaging (Apple Push Notification service på iPhone).</li>
+            <li><strong>Belöningsannonser:</strong> den som använder gratisversionen kan välja att titta på en videoannons i utbyte mot fler knappändringar. Annonserna visas av Google AdMob, som får ditt annons-id, din ungefärliga plats och information om enheten. Du väljer själv när du tittar; annonser visas aldrig när signaler skickas eller tas emot. På iPhone frågar Psst om lov innan personliga annonser visas.</li>
+            <li><strong>Köp av Psst+:</strong> prenumerationer och livstidsköpet går via Google Play eller App Store och hanteras av RevenueCat, som sparar ett köpkvitto kopplat till ditt anonyma id så att vi kan låsa upp Psst+. Vi ser aldrig dina betaluppgifter.</li>
+          </ul>
+          <p>Uppgifterna lagras hos Supabase i Stockholm (EU). Rättslig grund är avtal för grupper och signaler, samtycke för belöningsannonser. Att avinstallera Psst raderar inte kontot; se <a href="/radera-konto.html">Radera konto</a>.</p>
 
           <h2 id="signin">Konto och inloggning</h2>
           <p>Vissa produkter låter dig logga in med Google eller Apple. Då får vi ett användar-id och, om du godkänner det, din e-postadress och ditt namn. Väljer du att dölja din e-post vid inloggning med Apple får vi bara Apples vidarebefordringsadress. Vi får aldrig ditt lösenord.</p>
@@ -125,6 +133,7 @@
             <li><strong>Google Workspace</strong> för e-post.</li>
             <li><strong>GitHub Pages</strong> för den här webbplatsen.</li>
             <li><strong>Expo</strong> och <strong>Google Firebase</strong> för pushnotiser i Psst.</li>
+            <li><strong>Google AdMob</strong> för belöningsannonser i Psst, <strong>RevenueCat</strong> för köp av Psst+ och <strong>Google Cloud Text-to-Speech</strong> för AI-röster i Psst+.</li>
             <li><strong>Google</strong> och <strong>Apple</strong> för inloggning, om du väljer att använda dem.</li>
           </ul>
           <p>Vissa av dem är amerikanska företag. När uppgifter överförs utanför EU/EES sker det med stöd av EU:s och USA:s ramverk för dataskydd eller EU-kommissionens standardavtalsklausuler.</p>
