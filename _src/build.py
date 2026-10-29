@@ -165,32 +165,41 @@ PRODUCTS = [
         "art": None,
         "icon": '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8a6 6 0 1 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.7 21a2 2 0 0 1-3.4 0"/></svg>',
         "type":    {"en": "App", "sv": "App"},
-        "badge":   {"en": "Testing on Android", "sv": "Testas på Android"},
-        "tagline": {"en": "One tap to alert your whole group.", "sv": "Ett tryck så får hela gruppen veta."},
+        "badge":   {"en": "Closed test on Android · Launching December", "sv": "Stängt test på Android · Släpps i december"},
+        "tagline": {"en": "One tap. Everyone knows.", "sv": "Ett tryck. Alla vet."},
         "alt":     {"en": "", "sv": ""},
-        "short":   {"en": "Send an alert to everyone in your group with one tap, straight from a home-screen widget. For the moments when a chat thread is too slow.",
-                    "sv": "Skicka en signal till alla i gruppen med ett tryck, direkt från en widget på hemskärmen. För de gånger en chattråd är för långsam."},
+        "short":   {"en": "Send an alert to everyone in your group with one tap, straight from a home-screen widget. For the moments when a chat thread is too slow: the boss is on the floor, coffee's ready, table 12 is waiting.",
+                    "sv": "Skicka en signal till alla i gruppen med ett tryck, direkt från en widget på hemskärmen. För de gånger en chattråd är för långsam: chefen är på golvet, kaffet är klart, bord 12 väntar."},
         "body": {
-            "en": ["Psst sends an alert to everyone in your group with a single tap. Put the widget on your home screen and you don't even need to open the app.",
-                   "It's built for teams and groups that need each other's attention right now: a coffee break, a customer at the desk, time to leave. One tap, everyone's phone buzzes."],
-            "sv": ["Psst skickar en signal till alla i gruppen med ett enda tryck. Lägg widgeten på hemskärmen så behöver du inte ens öppna appen.",
-                   "Den är byggd för team och grupper som behöver varandras uppmärksamhet direkt: fikapaus, kund i disken, dags att gå. Ett tryck, och allas mobiler surrar."],
+            "en": ["Psst sends an alert to everyone in your group with a single tap. Put the widget on your home screen and you don't even need to open the app. The alert lands on every phone in about a second, with its own sound, so people know what it means without looking.",
+                   "It's built for teams and groups that need each other's attention right now: a coffee break, a customer at the desk, time to leave. Write your own buttons, give them an emoji and a sound, and let one fire on its own at 15:00 every weekday.",
+                   "Psst is free with 3 buttons and one group. Psst+ gives you 8 buttons, as many groups as you like and AI voices that read the alert out loud."],
+            "sv": ["Psst skickar en signal till alla i gruppen med ett enda tryck. Lägg widgeten på hemskärmen så behöver du inte ens öppna appen. Signalen landar i allas mobiler på ungefär en sekund, med sitt eget ljud, så alla vet vad den betyder utan att titta.",
+                   "Den är byggd för team och grupper som behöver varandras uppmärksamhet direkt: fikapaus, kund i disken, dags att gå. Skriv dina egna knappar, ge dem en emoji och ett ljud, och låt en gå av själv klockan 15:00 varje vardag.",
+                   "Psst är gratis med 3 knappar och en grupp. Psst+ ger dig 8 knappar, hur många grupper du vill och AI-röster som läser upp signalen."],
         },
         "specs": [
-            ({"en": "Platform", "sv": "Plattform"}, {"en": "Android, iOS later", "sv": "Android, iOS senare"}),
-            ({"en": "Status", "sv": "Status"}, {"en": "Testing on Android", "sv": "Testas på Android"}),
-            ({"en": "Price", "sv": "Pris"}, {"en": "To be announced", "sv": "Meddelas senare"}),
+            ({"en": "Platform", "sv": "Plattform"}, {"en": "Android on Google Play. iPhone later.", "sv": "Android via Google Play. iPhone senare."}),
+            ({"en": "Status", "sv": "Status"}, {"en": "Closed test on Google Play", "sv": "Stängt test på Google Play"}),
+            ({"en": "Launch", "sv": "Släpp"}, {"en": "December 2026", "sv": "December 2026"}),
+            ({"en": "Price", "sv": "Pris"}, {"en": "Free. Psst+ is an optional upgrade.", "sv": "Gratis. Psst+ är ett valfritt tillägg."}),
+            ({"en": "Languages", "sv": "Språk"}, {"en": "22, including English and Swedish", "sv": "22, bland annat svenska och engelska"}),
         ],
         "features": [
-            ({"en": "One-tap alerts", "sv": "Signal med ett tryck"}, {"en": "No typing, no thread. One tap reaches the whole group.", "sv": "Inget skrivande, ingen tråd. Ett tryck når hela gruppen."}),
-            ({"en": "Home-screen widgets", "sv": "Widgets på hemskärmen"}, {"en": "Send from the widget without opening the app.", "sv": "Skicka från widgeten utan att öppna appen."}),
-            ({"en": "Groups", "sv": "Grupper"}, {"en": "Invite your team and alert exactly the people who need to know.", "sv": "Bjud in ditt team och nå precis dem som behöver veta."}),
+            ({"en": "One-tap alerts", "sv": "Signal med ett tryck"}, {"en": "No typing, no thread. One tap reaches the whole group in about a second.", "sv": "Inget skrivande, ingen tråd. Ett tryck når hela gruppen på ungefär en sekund."}),
+            ({"en": "Home-screen widget", "sv": "Widget på hemskärmen"}, {"en": "Send from the widget without opening the app.", "sv": "Skicka från widgeten utan att öppna appen."}),
+            ({"en": "Your buttons, your words", "sv": "Dina knappar, dina ord"}, {"en": "Write the text, pick an emoji, a colour and a sound. Everyone in the group gets the same buttons.", "sv": "Skriv texten, välj emoji, färg och ljud. Alla i gruppen får samma knappar."}),
+            ({"en": "Join with a code", "sv": "Gå med via en kod"}, {"en": "A 4-character code or a QR code, valid for 10 minutes. Everyone sees who's in the group.", "sv": "En kod på 4 tecken eller en QR-kod som gäller i 10 minuter. Alla ser vem som är med i gruppen."}),
+            ({"en": "Scheduled buttons", "sv": "Schemalagda knappar"}, {"en": "Coffee break at 15:00, Monday to Friday, sends itself.", "sv": "Fika klockan 15:00, måndag till fredag, skickas av sig själv."}),
+            ({"en": "Sounds and voices", "sv": "Ljud och röster"}, {"en": "Ding, horn, alarm or pop. Add a robot voice, or with Psst+ an AI voice or your own recording.", "sv": "Pling, tuta, alarm eller pop. Lägg till en robotröst, eller med Psst+ en AI-röst eller en egen inspelning."}),
+            ({"en": "Psst+", "sv": "Psst+"}, {"en": "8 buttons, unlimited groups and AI voices. Monthly, yearly or once for life.", "sv": "8 knappar, obegränsat med grupper och AI-röster. Per månad, per år eller en gång för alltid."}),
         ],
         "shots": [],
         "cta": [
-            ({"en": "Get notified", "sv": "Få besked vid släpp"}, "https://www.instagram.com/viccom_games/", "btn ghost"),
+            ({"en": "Follow the launch", "sv": "Följ släppet"}, "https://www.instagram.com/viccom_games/", "btn ghost"),
         ],
-        "note": None,
+        "note": {"en": "The Google Play link goes here at launch. Psst is in closed testing with a crew of Android users right now.",
+                 "sv": "Länken till Google Play hamnar här vid släppet. Psst testas just nu i ett stängt test med ett gäng Android-användare."},
     },
 ]
 BY_KEY = {p["key"]: p for p in PRODUCTS}
@@ -603,7 +612,7 @@ def page_privacy(lang):
 
           <h2 id="products">Our games and apps</h2>
           <p>Store purchases and downloads through Google Play, the App Store, Steam or itch.io are handled by the store, which is responsible for its own data, such as payment details. We don't receive your payment details.</p>
-          <p>None of our products show ads or use third-party analytics today. If that changes, we update this policy first.</p>
+          <p>None of our products use third-party analytics. Psst shows optional rewarded ads (see below); the others show no ads.</p>
 
           <h3>Wobble Wheels</h3>
           <p>When you start the game, you get a guest account automatically, so your progress and online races work without signing up. We store a player ID, the display name you choose, your progress, garage and settings, and your race results, records and leaderboard placings. Your display name and results are visible to other players on leaderboards and in live races. You can link the guest account to Google to keep it across devices.</p>
@@ -623,8 +632,16 @@ def page_privacy(lang):
           <p>If AnyLap later gets accounts or cloud sync, we update this section before that version is released.</p>
 
           <h3>Psst</h3>
-          <p>Psst needs an account to know which groups you belong to. We store your account, your display name, the groups you're in and the alerts sent in them. To deliver alerts we store a push token for your device, and the alert is delivered through Expo and Google Firebase Cloud Messaging (and Apple Push Notification service on iPhone).</p>
-          <p>Data is stored with Supabase in Stockholm (EU). Legal basis: contract.</p>
+          <p>Psst creates an anonymous account on your phone the first time you open it, so no sign-up, email or password is needed. The account is what connects you to your groups.</p>
+          <ul>
+            <li><strong>What we store:</strong> an anonymous user ID, the display name you choose, the groups you're in, the buttons in those groups (emoji, text and settings written by group members), the alerts sent in them and who has seen them, and a push token for your device. Alerts are deleted after 7 days.</li>
+            <li><strong>Who sees it:</strong> your display name, the buttons and the alerts are visible to the other members of your group, and only to them. Invite codes expire after 10 minutes, and the group owner can remove members.</li>
+            <li><strong>Voice clips:</strong> if a group uses the robot voice, the clip is generated on your phone. Psst+ AI voices and recorded clips are stored with Supabase and downloaded to every phone in the group. AI voices are generated from the button text with Google Cloud Text-to-Speech.</li>
+            <li><strong>Delivery:</strong> alerts travel through Expo's push service and Google Firebase Cloud Messaging (Apple Push Notification service on iPhone).</li>
+            <li><strong>Rewarded ads:</strong> free users can watch an optional video ad in exchange for extra button edits. Ads are served by Google AdMob, which receives your advertising ID, approximate location and device information. You choose when to watch one; ads never appear when sending or receiving alerts. On iPhone, Psst asks for permission before personalised ads.</li>
+            <li><strong>Psst+ purchases:</strong> subscriptions and the lifetime purchase go through Google Play or the App Store and are managed by RevenueCat, which stores a purchase record linked to your anonymous ID so we can unlock Psst+. We never see your payment details.</li>
+          </ul>
+          <p>Data is stored with Supabase in Stockholm (EU). Legal basis: contract for groups and alerts, consent for rewarded ads. Uninstalling Psst doesn't delete the account; see <a href="{url('delete', lang)}">Delete account</a>.</p>
 
           <h2 id="signin">Accounts and sign-in</h2>
           <p>Some products let you sign in with Google or Apple. We then receive a user ID and, if you allow it, your email address and name. If you hide your email when signing in with Apple, we only get Apple's forwarding address. We never receive your password.</p>
@@ -640,6 +657,7 @@ def page_privacy(lang):
             <li><strong>Google Workspace</strong> for email.</li>
             <li><strong>GitHub Pages</strong> for hosting this website.</li>
             <li><strong>Expo</strong> and <strong>Google Firebase</strong> for push notifications in Psst.</li>
+            <li><strong>Google AdMob</strong> for rewarded ads in Psst, <strong>RevenueCat</strong> for Psst+ purchases, and <strong>Google Cloud Text-to-Speech</strong> for Psst+ AI voices.</li>
             <li><strong>Google</strong> and <strong>Apple</strong> for sign-in, if you choose to use them.</li>
           </ul>
           <p>Some are US companies. Transfers outside the EU/EEA rely on the EU–US Data Privacy Framework or the European Commission's standard contractual clauses.</p>
@@ -657,7 +675,7 @@ def page_privacy(lang):
 
           <h2 id="changes">Changes</h2>
           <p>We update this policy when we change how we handle data, for example when a product launches or gets a new feature. The date at the top shows the latest change.</p>"""
-        lede = "Last updated 28 October 2026. What personal data we handle in our website, games and apps, why, and what rights you have."
+        lede = "Last updated 29 October 2026. What personal data we handle in our website, games and apps, why, and what rights you have."
         desc = "How VICCOM handles personal data on viccom.se and in Wobble Wheels, Wyrmwind, AnyLap and Psst."
         title = "Privacy policy"
     else:
@@ -678,7 +696,7 @@ def page_privacy(lang):
 
           <h2 id="products">Våra spel och appar</h2>
           <p>Köp och nedladdningar via Google Play, App Store, Steam eller itch.io hanteras av butiken, som ansvarar för sina egna uppgifter, till exempel betalning. Vi får aldrig dina betaluppgifter.</p>
-          <p>Ingen av våra produkter visar reklam eller använder analys från tredje part i dag. Om det ändras uppdaterar vi policyn innan.</p>
+          <p>Ingen av våra produkter använder analys från tredje part. Psst visar frivilliga belöningsannonser (se nedan); de andra visar ingen reklam.</p>
 
           <h3>Wobble Wheels</h3>
           <p>När du startar spelet får du automatiskt ett gästkonto, så att framsteg och online-lopp fungerar utan registrering. Vi sparar ett spelar-id, det visningsnamn du väljer, dina framsteg, ditt garage och dina inställningar samt dina lopp, rekord och placeringar på topplistor. Visningsnamn och resultat syns för andra spelare på topplistor och i live-lopp. Du kan koppla gästkontot till Google för att behålla det mellan enheter.</p>
@@ -698,8 +716,16 @@ def page_privacy(lang):
           <p>Om AnyLap senare får konton eller synkning i molnet uppdaterar vi det här avsnittet innan den versionen släpps.</p>
 
           <h3>Psst</h3>
-          <p>Psst behöver ett konto för att veta vilka grupper du tillhör. Vi sparar ditt konto, ditt visningsnamn, grupperna du är med i och signalerna som skickas i dem. För att kunna leverera signaler sparar vi en push-token för din enhet, och signalen levereras via Expo och Google Firebase Cloud Messaging (och Apple Push Notification service på iPhone).</p>
-          <p>Uppgifterna lagras hos Supabase i Stockholm (EU). Rättslig grund är avtal.</p>
+          <p>Psst skapar ett anonymt konto i din mobil första gången du öppnar appen, så ingen registrering, e-post eller lösenord behövs. Kontot är det som kopplar dig till dina grupper.</p>
+          <ul>
+            <li><strong>Vad vi sparar:</strong> ett anonymt användar-id, det visningsnamn du väljer, grupperna du är med i, knapparna i grupperna (emoji, text och inställningar som medlemmarna skrivit), signalerna som skickats i dem och vem som sett dem, samt en push-token för din enhet. Signaler raderas efter 7 dagar.</li>
+            <li><strong>Vem som ser det:</strong> ditt visningsnamn, knapparna och signalerna syns för de andra medlemmarna i din grupp, och bara för dem. Inbjudningskoder slutar gälla efter 10 minuter, och gruppens ägare kan ta bort medlemmar.</li>
+            <li><strong>Röstklipp:</strong> om en grupp använder robotrösten skapas klippet i din mobil. AI-röster och inspelade klipp i Psst+ lagras hos Supabase och laddas ner till alla mobiler i gruppen. AI-rösterna skapas från knappens text med Google Cloud Text-to-Speech.</li>
+            <li><strong>Leverans:</strong> signalerna skickas via Expos pushtjänst och Google Firebase Cloud Messaging (Apple Push Notification service på iPhone).</li>
+            <li><strong>Belöningsannonser:</strong> den som använder gratisversionen kan välja att titta på en videoannons i utbyte mot fler knappändringar. Annonserna visas av Google AdMob, som får ditt annons-id, din ungefärliga plats och information om enheten. Du väljer själv när du tittar; annonser visas aldrig när signaler skickas eller tas emot. På iPhone frågar Psst om lov innan personliga annonser visas.</li>
+            <li><strong>Köp av Psst+:</strong> prenumerationer och livstidsköpet går via Google Play eller App Store och hanteras av RevenueCat, som sparar ett köpkvitto kopplat till ditt anonyma id så att vi kan låsa upp Psst+. Vi ser aldrig dina betaluppgifter.</li>
+          </ul>
+          <p>Uppgifterna lagras hos Supabase i Stockholm (EU). Rättslig grund är avtal för grupper och signaler, samtycke för belöningsannonser. Att avinstallera Psst raderar inte kontot; se <a href="{url('delete', lang)}">Radera konto</a>.</p>
 
           <h2 id="signin">Konto och inloggning</h2>
           <p>Vissa produkter låter dig logga in med Google eller Apple. Då får vi ett användar-id och, om du godkänner det, din e-postadress och ditt namn. Väljer du att dölja din e-post vid inloggning med Apple får vi bara Apples vidarebefordringsadress. Vi får aldrig ditt lösenord.</p>
@@ -715,6 +741,7 @@ def page_privacy(lang):
             <li><strong>Google Workspace</strong> för e-post.</li>
             <li><strong>GitHub Pages</strong> för den här webbplatsen.</li>
             <li><strong>Expo</strong> och <strong>Google Firebase</strong> för pushnotiser i Psst.</li>
+            <li><strong>Google AdMob</strong> för belöningsannonser i Psst, <strong>RevenueCat</strong> för köp av Psst+ och <strong>Google Cloud Text-to-Speech</strong> för AI-röster i Psst+.</li>
             <li><strong>Google</strong> och <strong>Apple</strong> för inloggning, om du väljer att använda dem.</li>
           </ul>
           <p>Vissa av dem är amerikanska företag. När uppgifter överförs utanför EU/EES sker det med stöd av EU:s och USA:s ramverk för dataskydd eller EU-kommissionens standardavtalsklausuler.</p>
@@ -732,7 +759,7 @@ def page_privacy(lang):
 
           <h2 id="changes">Ändringar</h2>
           <p>Vi uppdaterar policyn när vi ändrar hur vi hanterar uppgifter, till exempel när en produkt släpps eller får en ny funktion. Datumet högst upp visar när den senast ändrades.</p>"""
-        lede = "Senast uppdaterad 28 oktober 2026. Vilka personuppgifter vi hanterar på webbplatsen och i våra spel och appar, varför, och vilka rättigheter du har."
+        lede = "Senast uppdaterad 29 oktober 2026. Vilka personuppgifter vi hanterar på webbplatsen och i våra spel och appar, varför, och vilka rättigheter du har."
         desc = "Hur VICCOM hanterar personuppgifter på viccom.se och i Wobble Wheels, Wyrmwind, AnyLap och Psst."
         title = "Integritetspolicy"
     return doc_page(lang, "privacy", title, desc, lede, toc, body)
@@ -749,19 +776,26 @@ def page_delete(lang):
         body = f"""          <div class="note"><p>Developer: VICCOM. Applies to Wobble Wheels and Psst. Uninstalling an app does not delete your account. AnyLap has no account: everything it saves is on your phone, and you delete it by removing racers and sessions in the app or by uninstalling it.</p></div>
 
           <h2 id="in-app">Delete in the app</h2>
+          <p><strong>Wobble Wheels</strong></p>
           <ol>
-            <li>Open the game or app.</li>
+            <li>Open the game.</li>
             <li>Go to <strong>Settings</strong>, then <strong>Account</strong>.</li>
             <li>Tap <strong>Delete account</strong> and confirm.</li>
           </ol>
-          <p>The account is deleted straight away and you're signed out.</p>
+          <p><strong>Psst</strong></p>
+          <ol>
+            <li>Open Psst.</li>
+            <li>Go to the <strong>Me</strong> tab.</li>
+            <li>Tap <strong>Delete account</strong> at the bottom and confirm.</li>
+          </ol>
+          <p>The account is deleted straight away and you're signed out. Psst accounts are anonymous (no email or password), so the app on your phone is the only key to the account: delete it before you uninstall or switch phones.</p>
 
           <h2 id="by-email">Delete by email</h2>
           <p>If you no longer have the app, or can't get in, we can delete the account for you.</p>
           <ol>
             <li>Email <a href="{mail}">support@viccom.se</a> from the address linked to the account, if there is one.</li>
             <li>Put <strong>Delete account</strong> in the subject line.</li>
-            <li>Tell us which game or app it's about and your display name.</li>
+            <li>Tell us which game or app it's about and your display name. For Psst, also tell us the name of a group you're in, so we can find the right anonymous account.</li>
           </ol>
           <p>We confirm within 7 days and delete the account within 30 days. If we can't tell that the account is yours, we'll ask you to confirm, for example by deleting it in the app.</p>
           <p><a class="btn" href="{mail}">Email support about deletion</a></p>
@@ -772,7 +806,7 @@ def page_delete(lang):
             <li>Email address and display name</li>
             <li>Progress, garage, settings and saves in the cloud</li>
             <li>Race results, records and leaderboard placings</li>
-            <li>Groups, alerts and push tokens (Psst)</li>
+            <li>Psst: your anonymous ID, display name, push token, your memberships, the alerts you sent, your edit and voice counters, and your Psst+ status in our database. Groups you <em>own</em> are deleted too, with their buttons and voice clips, so the other members lose that group. If you want it to live on, hand it over by email first.</li>
           </ul>
 
           <h2 id="kept">What we keep</h2>
@@ -791,19 +825,26 @@ def page_delete(lang):
         body = f"""          <div class="note"><p>Utvecklare: VICCOM. Gäller Wobble Wheels och Psst. Att avinstallera en app raderar inte kontot. AnyLap har inget konto: allt appen sparar ligger i mobilen, och du raderar det genom att ta bort förare och pass i appen eller genom att avinstallera den.</p></div>
 
           <h2 id="in-app">Radera i appen</h2>
+          <p><strong>Wobble Wheels</strong></p>
           <ol>
-            <li>Öppna spelet eller appen.</li>
+            <li>Öppna spelet.</li>
             <li>Gå till <strong>Settings</strong> (Inställningar) och sedan <strong>Account</strong> (Konto).</li>
             <li>Tryck på <strong>Delete account</strong> (Radera konto) och bekräfta.</li>
           </ol>
-          <p>Kontot raderas direkt och du loggas ut.</p>
+          <p><strong>Psst</strong></p>
+          <ol>
+            <li>Öppna Psst.</li>
+            <li>Gå till fliken <strong>Me</strong> (Jag).</li>
+            <li>Tryck på <strong>Delete account</strong> (Radera konto) längst ner och bekräfta.</li>
+          </ol>
+          <p>Kontot raderas direkt och du loggas ut. Konton i Psst är anonyma (ingen e-post eller lösenord), så appen i din mobil är den enda nyckeln till kontot: radera det innan du avinstallerar eller byter mobil.</p>
 
           <h2 id="by-email">Radera via mejl</h2>
           <p>Har du inte kvar appen, eller kommer du inte in, kan vi radera kontot åt dig.</p>
           <ol>
             <li>Mejla <a href="{mail}">support@viccom.se</a> från den adress som är kopplad till kontot, om det finns en.</li>
             <li>Skriv <strong>Radera konto</strong> i ämnesraden.</li>
-            <li>Ange vilket spel eller vilken app det gäller och ditt visningsnamn.</li>
+            <li>Ange vilket spel eller vilken app det gäller och ditt visningsnamn. För Psst, skriv också namnet på en grupp du är med i, så att vi hittar rätt anonymt konto.</li>
           </ol>
           <p>Vi bekräftar inom 7 dagar och raderar kontot inom 30 dagar. Om vi inte kan se att kontot är ditt ber vi dig bekräfta det, till exempel genom att radera det i appen.</p>
           <p><a class="btn" href="{mail}">Mejla support om radering</a></p>
@@ -814,7 +855,7 @@ def page_delete(lang):
             <li>E-postadress och visningsnamn</li>
             <li>Framsteg, garage, inställningar och sparat i molnet</li>
             <li>Lopp, rekord och placeringar på topplistor</li>
-            <li>Grupper, signaler och push-tokens (Psst)</li>
+            <li>Psst: ditt anonyma id, visningsnamn, push-token, dina medlemskap, signalerna du skickat, dina räknare för ändringar och röster, samt din Psst+-status i vår databas. Grupper du <em>äger</em> raderas också, med sina knappar och röstklipp, så de andra medlemmarna förlorar gruppen. Vill du att den ska leva vidare, lämna över den via mejl först.</li>
           </ul>
 
           <h2 id="kept">Vad som sparas</h2>
