@@ -139,9 +139,9 @@ PRODUCTS = [
                     "sv": "Rikta mobilen mot mållinjen så räknar AnyLap varv och tar tid när bilarna passerar. Inga transpondrar, ingen extra utrustning."},
         "body": {
             "en": ["AnyLap turns your phone into a lap timer for RC cars. Set it up by the track, point the camera at the finish line, and it recognises each car as it crosses and times the lap.",
-                   "No transponders and no timing loop. Lap times, stats and replays are saved on your phone, so you can compare runs and see if that setup change actually helped. No account, no ads, and nothing leaves the phone unless you share it."],
+                   "No transponders and no timing loop. Lap times, stats and replays are saved on your phone, so you can compare runs and see if that setup change actually helped. No account needed and no ads; sync between phones is optional."],
             "sv": ["AnyLap gör mobilen till ett varvtidtagarur för radiostyrda bilar. Ställ den vid banan, rikta kameran mot mållinjen, så känner den igen varje bil som passerar och tar tid på varvet.",
-                   "Inga transpondrar och ingen tidtagningsslinga. Varvtider, statistik och repriser sparas i mobilen, så att du kan jämföra körningar och se om ändringen i inställningarna faktiskt hjälpte. Inget konto, ingen reklam, och inget lämnar mobilen om du inte delar det själv."],
+                   "Inga transpondrar och ingen tidtagningsslinga. Varvtider, statistik och repriser sparas i mobilen, så att du kan jämföra körningar och se om ändringen i inställningarna faktiskt hjälpte. Inget konto behövs och ingen reklam; synkning mellan mobiler är frivillig."],
         },
         "specs": [
             ({"en": "Platform", "sv": "Plattform"}, {"en": "Android first, iOS later", "sv": "Android först, iOS senare"}),
@@ -622,14 +622,16 @@ def page_privacy(lang):
           <p>Wyrmwind is a prototype and doesn't collect any personal data. We'll update this section before it does.</p>
 
           <h3>AnyLap</h3>
-          <p>AnyLap is a lap timer that uses your phone's camera. It needs the camera permission to see racers cross the finish line. The video is processed on your phone and is never sent to us or anyone else.</p>
+          <p>AnyLap is a lap timer that uses your phone's camera. It needs the camera permission to see racers cross the finish line. The video is processed on your phone and is never sent to us. AnyLap works without an account; everything below that leaves the phone is optional.</p>
           <ul>
-            <li><strong>No account and no sign-in.</strong> AnyLap has no internet connection and sends no data to any server.</li>
-            <li><strong>What it saves stays on your phone:</strong> racer names, car photos and colour calibration, lap times, stats and replays of finish-line crossings. Delete them by removing racers and sessions in the app, or by uninstalling it.</li>
-            <li><strong>Sharing only when you choose.</strong> If you share results or a video, it goes through your phone's normal share menu to the app you pick.</li>
-            <li><strong>No ads, no analytics and no tracking.</strong></li>
+            <li><strong>Saved on your phone:</strong> racer names, car photos and colour calibration, lap times, stats and replays of finish-line crossings. Delete them by removing racers and sessions in the app, or by uninstalling it.</li>
+            <li><strong>Account and sync (optional):</strong> if you turn on sync under Settings → Account &amp; sync, AnyLap creates a guest account and stores your racers and sessions (racer names, lap times and results) so they follow you to other phones. You can add an email address, and we send a one-time code to it to sign in. The display name you choose is shown on sessions you time for others.</li>
+            <li><strong>Sharing racers and live boards (optional):</strong> if you share a racer or start a live board, the racer or the race standings (names, laps and times) are visible to the people you give the code or link to.</li>
+            <li><strong>Help improve car recognition (optional):</strong> if you agree, AnyLap shares small pictures of the cars at the finish line, with which car it was and camera settings, under your account (a guest one is created if needed). They are used only to train the recognition model and are never public. No names, no video and no location. Turn it off any time under Settings → Car recognition; pictures not yet sent are then deleted from the phone.</li>
+            <li><strong>Downloads:</strong> the app fetches the newest recognition model, beta settings and update notices from our server. Those requests send no personal data.</li>
+            <li><strong>No ads, no analytics and no tracking.</strong> During the open beta AnyLap is free and has no purchases.</li>
           </ul>
-          <p>If AnyLap later gets accounts or cloud sync, we update this section before that version is released.</p>
+          <p>The data is stored with Supabase in Stockholm (EU), sent encrypted. Legal basis is contract for sync, sharing and live boards, and consent for car pictures. In the app, Settings → Account &amp; sync has <em>Export my data</em> and <em>Delete my cloud data</em>, which removes everything on the server, pictures included. See also <a href="/delete-account.html">Delete account</a>.</p>
 
           <h3>Psst</h3>
           <p>Psst creates an anonymous account on your phone the first time you open it, so no sign-up, email or password is needed. The account is what connects you to your groups.</p>
@@ -675,7 +677,7 @@ def page_privacy(lang):
 
           <h2 id="changes">Changes</h2>
           <p>We update this policy when we change how we handle data, for example when a product launches or gets a new feature. The date at the top shows the latest change.</p>"""
-        lede = "Last updated 29 October 2026. What personal data we handle in our website, games and apps, why, and what rights you have."
+        lede = "Last updated 4 November 2026. What personal data we handle in our website, games and apps, why, and what rights you have."
         desc = "How VICCOM handles personal data on viccom.se and in Wobble Wheels, Wyrmwind, AnyLap and Psst."
         title = "Privacy policy"
     else:
@@ -706,14 +708,16 @@ def page_privacy(lang):
           <p>Wyrmwind är en prototyp och samlar inte in några personuppgifter. Vi uppdaterar det här avsnittet innan det ändras.</p>
 
           <h3>AnyLap</h3>
-          <p>AnyLap är en varvräknare som använder mobilens kamera. Appen behöver kamerabehörighet för att se när förare passerar mållinjen. Kamerabilden behandlas direkt i mobilen och skickas aldrig till oss eller någon annan.</p>
+          <p>AnyLap är en varvräknare som använder mobilens kamera. Appen behöver kamerabehörighet för att se när förare passerar mållinjen. Kamerabilden behandlas direkt i mobilen och skickas aldrig till oss. AnyLap fungerar utan konto; allt nedan som lämnar mobilen är frivilligt.</p>
           <ul>
-            <li><strong>Inget konto och ingen inloggning.</strong> AnyLap har ingen internetanslutning och skickar inga uppgifter till någon server.</li>
-            <li><strong>Det som sparas, sparas i mobilen:</strong> förarnamn, foton och färgkalibrering av bilar, varvtider, statistik och repriser av passeringar. Du raderar det genom att ta bort förare och pass i appen eller genom att avinstallera den.</li>
-            <li><strong>Delning sker bara när du väljer det.</strong> Delar du resultat eller en video går den via mobilens vanliga delningsmeny till den app du väljer.</li>
-            <li><strong>Ingen reklam, ingen analys och ingen spårning.</strong></li>
+            <li><strong>Det som sparas i mobilen:</strong> förarnamn, foton och färgkalibrering av bilar, varvtider, statistik och repriser av passeringar. Du raderar det genom att ta bort förare och pass i appen eller genom att avinstallera den.</li>
+            <li><strong>Konto och synkning (frivilligt):</strong> slår du på synkning under Inställningar → Konto och synk skapar AnyLap ett gästkonto och sparar dina förare och pass (förarnamn, varvtider och resultat) så att de följer med till andra mobiler. Du kan lägga till en e-postadress, och vi skickar en engångskod dit för inloggning. Visningsnamnet du väljer syns på pass du tar tid på åt andra.</li>
+            <li><strong>Dela förare och livetavlor (frivilligt):</strong> delar du en förare eller startar en livetavla syns föraren eller ställningen (namn, varv och tider) för dem du ger koden eller länken till.</li>
+            <li><strong>Hjälp till att förbättra igenkänningen (frivilligt):</strong> om du säger ja delar AnyLap små bilder av bilarna vid mållinjen, med vilken bil det var och kamerainställningar, under ditt konto (ett gästkonto skapas vid behov). Bilderna används bara för att träna igenkänningsmodellen och visas aldrig offentligt. Inga namn, ingen video och ingen plats. Du stänger av det när du vill under Inställningar → Biligenkänning; bilder som inte skickats raderas då från mobilen.</li>
+            <li><strong>Nedladdningar:</strong> appen hämtar den senaste igenkänningsmodellen, betainställningar och uppdateringsbesked från vår server. De anropen skickar inga personuppgifter.</li>
+            <li><strong>Ingen reklam, ingen analys och ingen spårning.</strong> Under den öppna betan är AnyLap gratis och har inga köp.</li>
           </ul>
-          <p>Om AnyLap senare får konton eller synkning i molnet uppdaterar vi det här avsnittet innan den versionen släpps.</p>
+          <p>Uppgifterna lagras hos Supabase i Stockholm (EU) och skickas krypterat. Rättslig grund är avtal för synkning, delning och livetavlor, och samtycke för bilderna av bilarna. I appen finns <em>Exportera mina data</em> och <em>Radera mina molndata</em> under Inställningar → Konto och synk; det sista raderar allt på servern, bilderna också. Se även <a href="/radera-konto.html">Radera konto</a>.</p>
 
           <h3>Psst</h3>
           <p>Psst skapar ett anonymt konto i din mobil första gången du öppnar appen, så ingen registrering, e-post eller lösenord behövs. Kontot är det som kopplar dig till dina grupper.</p>
@@ -759,7 +763,7 @@ def page_privacy(lang):
 
           <h2 id="changes">Ändringar</h2>
           <p>Vi uppdaterar policyn när vi ändrar hur vi hanterar uppgifter, till exempel när en produkt släpps eller får en ny funktion. Datumet högst upp visar när den senast ändrades.</p>"""
-        lede = "Senast uppdaterad 29 oktober 2026. Vilka personuppgifter vi hanterar på webbplatsen och i våra spel och appar, varför, och vilka rättigheter du har."
+        lede = "Senast uppdaterad 4 november 2026. Vilka personuppgifter vi hanterar på webbplatsen och i våra spel och appar, varför, och vilka rättigheter du har."
         desc = "Hur VICCOM hanterar personuppgifter på viccom.se och i Wobble Wheels, Wyrmwind, AnyLap och Psst."
         title = "Integritetspolicy"
     return doc_page(lang, "privacy", title, desc, lede, toc, body)
@@ -773,7 +777,7 @@ def page_delete(lang):
            ("partial", L(lang, "Delete only some data", "Radera bara viss data"))]
     mail = "mailto:support@viccom.se?subject=" + ("Delete%20account" if E else "Radera%20konto")
     if E:
-        body = f"""          <div class="note"><p>Developer: VICCOM. Applies to Wobble Wheels and Psst. Uninstalling an app does not delete your account. AnyLap has no account: everything it saves is on your phone, and you delete it by removing racers and sessions in the app or by uninstalling it.</p></div>
+        body = f"""          <div class="note"><p>Developer: VICCOM. Applies to Wobble Wheels, Psst and AnyLap. Uninstalling an app does not delete your account. In AnyLap, open Settings → Account &amp; sync → Delete my cloud data; it removes your racers, sessions and car pictures from the server. What is saved only on the phone goes when you remove it in the app or uninstall it.</p></div>
 
           <h2 id="in-app">Delete in the app</h2>
           <p><strong>Wobble Wheels</strong></p>
@@ -822,7 +826,7 @@ def page_delete(lang):
         title, lede = "Delete account", "How to delete your account in a VICCOM game or app, and what happens to your data."
         desc = "How to delete your VICCOM account in Wobble Wheels or Psst, and what happens to your data."
     else:
-        body = f"""          <div class="note"><p>Utvecklare: VICCOM. Gäller Wobble Wheels och Psst. Att avinstallera en app raderar inte kontot. AnyLap har inget konto: allt appen sparar ligger i mobilen, och du raderar det genom att ta bort förare och pass i appen eller genom att avinstallera den.</p></div>
+        body = f"""          <div class="note"><p>Utvecklare: VICCOM. Gäller Wobble Wheels, Psst och AnyLap. Att avinstallera en app raderar inte kontot. I AnyLap öppnar du Inställningar → Konto och synk → Radera mina molndata; det raderar dina förare, pass och bilder av bilarna från servern. Det som bara sparas i mobilen försvinner när du tar bort det i appen eller avinstallerar den.</p></div>
 
           <h2 id="in-app">Radera i appen</h2>
           <p><strong>Wobble Wheels</strong></p>
